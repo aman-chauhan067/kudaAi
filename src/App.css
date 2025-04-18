@@ -51,7 +51,7 @@
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background: rgba(179, 215, 242, 0.15);
+  background: rgba(179, 215, 242, 0.25);
   border: none;
   border-radius: 9999px;
   padding: 0.75rem;
@@ -70,14 +70,15 @@
 }
 
 .intro h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 3.3rem;
+  margin-top: -20px;
+  margin-bottom: 0.3rem;
 }
 
 .intro p {
   display: inline-flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .intro p span {
@@ -88,7 +89,10 @@
 .search-wrapper {
   position: relative;
   max-width: 600px;
-  margin: 1.5rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .search-container {
@@ -174,18 +178,21 @@
 }
 
 .card {
+  width: 255px;
+  aspect-ratio: 3 / 2;
   background: linear-gradient(145deg,
       var(--glass-light),
       var(--glass-dark));
   border: 1px solid rgba(179, 215, 242, 0.3);
   border-radius: 0.75rem;
-  padding: 1.5rem;
+  padding: .7rem;
   font-size: 1.25rem;
-  transition: background 0.3s, transform 0.3s;
-  aspect-ratio: 3 / 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s;
+  flex-shrink: 0;
 }
 
 .card:hover {
@@ -249,7 +256,7 @@
   border: 2px dashed rgba(179, 215, 242, 0.6);
   border-radius: 1rem;
   padding: 4rem 2rem;
-  margin-top: 20px;
+  margin-top: 29px;
   cursor: pointer;
   transition: background 0.3s, border-color 0.3s;
 }
